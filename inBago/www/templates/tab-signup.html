@@ -1,0 +1,50 @@
+<ion-header-bar class="headerColor" >
+        <button class="button button-icon ion-ios-arrow-back"></button>
+  <div class="h1 title"><i>InBago</i></div>
+  <button class="button button-clear  ion-ios-cart"></button>
+</ion-header-bar>
+<ion-view view-title="Sign Up" class="loginBg" hide-nav-bar="true" >
+<!-- <ion-nav-title><img src="img/logo.png" width="40"></ion-nav-title> -->
+
+  <ion-content class="padding">
+
+  <div class="row responsive-sm padding remvoeBP">
+	  <div class="col center">
+		<button class="loginBtn loginBtn--facebook" ng-click="facebookSignIn()">
+  Login with Facebook
+</button>
+ 
+<button class="loginBtn loginBtn--google" ng-click="twitterSignIn()" >
+  Login with Google
+</button>
+			 <hr id="login-divider" /><br>
+			 <div  class="text-center">
+			 <strong>OR</strong><br>
+			 </div>
+			 <h5>Enter your Email and Mobile number    to create your inApp account.</h5>
+
+
+		<div class="list list-inset removePM">
+				  <label class="item item-input"><input type="text" placeholder="Phone Number"> </label>
+			  <label class="item item-input"><input type="text" placeholder="Email Address"> </label>
+		
+			  <label class="item item-input"><input type="password" placeholder="Password"> </label>
+			</div>
+
+			<div class="loginButton"><button class="button  button-block headerColor" ng-click="login(user);" > signup </button>  </div>
+	  </div>
+  </div>
+	<div  class="text-center">
+<h5>Already have account ?</h5></br>
+ 
+               <a href="#/app/login" >Login here </a>
+            </div>
+
+<!--	<div class="row  padding removePM">
+	  <div class="col"> <a class=" loginBtn loginBtn--facebook" ng-click="facebookSignIn()"><i class="icon ion-social-facebook"></i></a> </div>
+	  <div class="col"> <a class="loginBtn loginBtn--facebook" ng-click="twitterSignIn()"><i class="icon ion-social-twitter"></i></a> </div>
+	</div>-->
+
+  </ion-content>
+</ion-view>
+	
